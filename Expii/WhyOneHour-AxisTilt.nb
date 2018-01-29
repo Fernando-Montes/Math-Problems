@@ -1,0 +1,152 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5018,        144]
+NotebookOptionsPosition[      4591,        124]
+NotebookOutlinePosition[      4937,        139]
+CellTagsIndexPosition[      4894,        136]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"www", ".", "expii", ".", "com"}], "/", "solve"}], "/", "49"}],
+      "/", "5"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{" ", 
+     RowBox[{"The", " ", "Earth"}], "\[CloseCurlyQuote]"}], "s", " ", "axial",
+     " ", "tilt", " ", "of", " ", "23.5", "\[Degree]", " ", "causes", " ", 
+    "the", " ", "Sun", " ", "to", " ", "rise", " ", "earlier", " ", "in", " ",
+     "the", " ", "summer", " ", "and", " ", "later", " ", "in", " ", "the", 
+    " ", 
+    RowBox[{"winter", ".", " ", "Determine"}], " ", "the", " ", "latitude", 
+    " ", "at", " ", "which", " ", "sunrise", " ", "time", " ", "in", " ", 
+    "the", " ", "middle", " ", "of", " ", "summer", " ", "is", " ", 
+    "precisely", " ", "2", " ", "hours", " ", "earlier", " ", "than", " ", 
+    "in", " ", "the", " ", "middle", " ", "of", " ", 
+    RowBox[{"winter", ".", " ", "Round"}], " ", "your", " ", "answer", " ", 
+    "to", " ", "the", " ", "nearest", " ", "tenth", " ", "of", " ", "a", " ", 
+    "degree", " ", 
+    RowBox[{"North", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Ratio", " ", "we", " ", "need", " ", "since", " ", "this", " ", "is", " ",
+     "2", " ", "hours", " ", "difference"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"11", "/", "13."}]}]], "Input",
+ CellChangeTimes->{{3.6880612194297676`*^9, 3.688061275434127*^9}, {
+  3.726224733053587*^9, 3.7262247770112524`*^9}, {3.726225406388695*^9, 
+  3.72622541339314*^9}}],
+
+Cell[BoxData["0.8461538461538463`"], "Output",
+ CellChangeTimes->{{3.688061272984911*^9, 3.6880612759957304`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "The", " ", "radius", " ", "of", " ", "the", " ", "circunference", " ", 
+     "at", " ", "latitude", " ", "lat", " ", "is", " ", "r"}], " ", "=", " ", 
+    RowBox[{"R", " ", 
+     RowBox[{"Cos", "[", "lat", "]"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"At", " ", "that", " ", "latitude"}], ",", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+      "the", " ", "difference", " ", "between", " ", "day", " ", "and", " ", 
+       "night", " ", "is", " ", "given", " ", "by", " ", "the", " ", "length",
+        " ", "of", " ", "the", " ", "arc", " ", "2", 
+       RowBox[{"a", "/", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", "Pi"}], " ", "-", " ", 
+          RowBox[{"2", "a"}]}], ")"}]}]}], ".."}], " ", "see", " ", 
+     RowBox[{"jpg", "."}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"lat", " ", "=", " ", "16.7"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"tilt", "=", "23.5"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"a", " ", "=", 
+     RowBox[{"ArcCos", "[", 
+      RowBox[{
+       RowBox[{"Tan", "[", 
+        RowBox[{"lat", "*", 
+         RowBox[{"Pi", "/", "180"}]}], "]"}], " ", 
+       RowBox[{"Tan", "[", 
+        RowBox[{"tilt", "*", 
+         RowBox[{"Pi", "/", "180"}]}], "]"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"ratio", "=", 
+    RowBox[{"2", " ", 
+     RowBox[{"a", " ", "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", "Pi"}], "-", 
+        RowBox[{"2", "a"}]}], ")"}]}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.688060878620595*^9, 3.6880609457170553`*^9}, {
+  3.688061049552987*^9, 3.688061106493643*^9}, {3.6880611460866966`*^9, 
+  3.6880611706014547`*^9}, {3.688061280129757*^9, 3.688061446208421*^9}, {
+  3.7262254164195595`*^9, 3.7262254200855827`*^9}, {3.7262256349531956`*^9, 
+  3.7262256703986225`*^9}, {3.7262257161265163`*^9, 3.726225788998584*^9}}],
+
+Cell[BoxData["0.8462372622270294`"], "Output",
+ CellChangeTimes->{
+  3.688061112031678*^9, {3.6880612806289597`*^9, 3.6880614470664268`*^9}}]
+}, Open  ]]
+},
+WindowSize->{767, 873},
+WindowMargins->{{Automatic, 27}, {3, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1665, 36, 164, "Input"],
+Cell[2248, 60, 114, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2399, 66, 2032, 51, 164, "Input"],
+Cell[4434, 119, 141, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+

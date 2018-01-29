@@ -1,0 +1,302 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11201,        294]
+NotebookOptionsPosition[     10615,        269]
+NotebookOutlinePosition[     10967,        284]
+CellTagsIndexPosition[     10924,        281]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"www", ".", "expii", ".", "com"}], "/", "solve"}], "/", "20"}],
+      "/", "4"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{" ", 
+               RowBox[{
+               "The", " ", "Cylindrical", " ", "Earth", " ", "Society", " ", 
+                "wants", " ", "to", " ", "overtake", " ", "the", " ", "Flat", 
+                " ", "Earth", " ", "Society", " ", "to", " ", "reduce", " ", 
+                "carbon", " ", 
+                RowBox[{"emissions", ".", " ", "By"}], " ", "folding", " ", 
+                "the", " ", "Earth", " ", "into", " ", "an", " ", 
+                RowBox[{"(", "open", ")"}], " ", "cylinder", " ", "Earth"}], 
+               "\[CloseCurlyQuote]"}], ",", 
+              RowBox[{
+              "they", " ", "plan", " ", "to", " ", "reduce", " ", "average", 
+               " ", "travel", " ", 
+               RowBox[{"distance", ".", " ", "They"}], " ", "model", " ", 
+               "the", " ", "Earth", " ", "as", " ", "a", " ", "map", " ", 
+               "on", " ", "one", " ", "side", " ", "of", " ", "a", " ", "8.5",
+                " ", "x", " ", "11", " ", "flat", " ", "piece", " ", "of", 
+               " ", 
+               RowBox[{"paper", ".", " ", "To"}], " ", "model", " ", 
+               "Earth"}]}], "\[CloseCurlyQuote]"}], ",", 
+            RowBox[{
+            "they", " ", "attach", " ", "the", " ", "two", " ", "long", " ", 
+             "sides", " ", "together", " ", "to", " ", "get", " ", "a", " ", 
+             "cylinder", " ", "of", " ", "height", " ", "11", " ", "and", " ",
+              "circumference", " ", "8.5"}], ",", 
+            RowBox[{
+            "so", " ", "that", " ", "the", " ", "map", " ", "appears", " ", 
+             "on", " ", "the", " ", "outer", " ", "surface", " ", "of", " ", 
+             "the", " ", 
+             RowBox[{"cylinder", ".", " ", "Let"}], " ", "P", " ", "and", " ",
+              "Q", " ", "be", " ", "two", " ", "points", " ", "chosen", " ", 
+             "uniformly", " ", "at", " ", "random", " ", "from", " ", "the", 
+             " ", "original", " ", 
+             RowBox[{"(", "flat", ")"}], " ", "model", " ", "of", " ", "the", 
+             " ", "Earth"}], ",", " ", 
+            RowBox[{
+            "and", " ", "let", " ", "D", " ", "be", " ", "the", " ", 
+             "original", " ", "distance", " ", "between", " ", "P", " ", 
+             "and", " ", 
+             RowBox[{"Q", ".", " ", "Let"}], " ", "D"}]}], 
+           "\[CloseCurlyQuote]"}], " ", "be", " ", "the", " ", "new", " ", 
+          RowBox[{"(", "cylindrical", ")"}], " ", "distance", " ", "between", 
+          " ", "P", " ", "and", " ", 
+          RowBox[{"Q", ":", " ", 
+           RowBox[{
+           "the", " ", "length", " ", "of", " ", "the", " ", "shortest", " ", 
+            "path", " ", "from", " ", "P", " ", "to", " ", "Q", " ", "lying", 
+            " ", "on", " ", "the", " ", "outer", " ", "surface", " ", "of", 
+            " ", "the", " ", 
+            RowBox[{"cylinder", ".", " ", "Let"}], " ", "E", " ", "and", " ", 
+            "E"}]}]}], "\[CloseCurlyQuote]"}], " ", "be", " ", "the", " ", 
+        "expected", " ", "values", " ", "of", " ", 
+        RowBox[{"D", "^", "2"}], " ", "and", " ", 
+        RowBox[{
+         RowBox[{"D", "'"}], "^", "2"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"the", " ", "squared", " ", "distances"}], ")"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{"respectively", ".", " ", "What"}], " ", "is", " ", "the", 
+        " ", "ratio", " ", "E"}]}], "\[CloseCurlyQuote]"}], "/", "E"}], ",", 
+    " ", 
+    RowBox[{"rounded", " ", "to", " ", "the", " ", "nearest", " ", 
+     RowBox[{"hundredth", "?"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Expected", " ", "distance", " ", "between", " ", "P", " ", "and", " ", 
+    "Q", " ", 
+    RowBox[{"(", 
+     RowBox[{"chosen", " ", "randomly"}], ")"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"h", "=", "8.5"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"l", "=", "11"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Integrate", "[", 
+    RowBox[{
+     RowBox[{"Integrate", "[", 
+      RowBox[{
+       RowBox[{"Integrate", "[", 
+        RowBox[{
+         RowBox[{"Integrate", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"x1", "-", "x2"}], ")"}], "^", "2"}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"y1", "-", "y2"}], ")"}], "^", "2"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y2", ",", "0", ",", "h"}], "}"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x2", ",", "0", ",", "l"}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y1", ",", "0", ",", "h"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x1", ",", "0", ",", "l"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.682940928600831*^9, 3.682941025834859*^9}, {
+  3.6829410646217117`*^9, 3.6829410716397734`*^9}, {3.682943260669705*^9, 
+  3.6829432614372663`*^9}, {3.7257888482483807`*^9, 3.7257888817115803`*^9}, {
+  3.7257903573885803`*^9, 3.72579047363978*^9}, {3.7257905244527807`*^9, 
+  3.7257905600383806`*^9}, {3.7257907761607804`*^9, 3.7257907805755806`*^9}, {
+  3.72579093872338*^9, 3.7257909431849804`*^9}}],
+
+Cell[BoxData["281573.3020833334`"], "Output",
+ CellChangeTimes->{
+  3.6829410265949197`*^9, 3.6829410724723396`*^9, 3.6829435783821306`*^9, {
+   3.7257907813555803`*^9, 3.7257907834771805`*^9}, 3.7257909442301807`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Expected", " ", "distance", " ", "between", " ", "P", " ", "and", " ", 
+    "Q", " ", 
+    RowBox[{"(", 
+     RowBox[{"chosen", " ", "randomly"}], ")"}], " ", "considering", " ", 
+    "that", " ", "the", " ", "surface", " ", "is", " ", "now", " ", "a", " ", 
+    "cylinder"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Integrate", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Integrate", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"x1", "-", "x2"}], ")"}], "^", "2"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"y1", "-", "y2"}], ")"}], "^", "2"}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"y2", ",", "0", ",", 
+              RowBox[{"y1", "+", 
+               RowBox[{"h", "/", "2"}]}]}], "}"}]}], "]"}], "+", 
+          RowBox[{"Integrate", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"x1", "-", "x2"}], ")"}], "^", "2"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"h", "-", "y2", "+", "y1"}], ")"}], "^", "2"}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"y2", ",", 
+              RowBox[{"y1", "+", 
+               RowBox[{"h", "/", "2"}]}], ",", "h"}], "}"}]}], "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"y1", ",", "0", ",", 
+           RowBox[{"h", "/", "2"}]}], "}"}]}], "]"}], "+", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Integrate", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Integrate", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"x1", "-", "x2"}], ")"}], "^", "2"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"y1", "-", "y2"}], ")"}], "^", "2"}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"y2", ",", 
+              RowBox[{"y1", "-", 
+               RowBox[{"h", "/", "2"}]}], ",", "h"}], "}"}]}], "]"}], "+", 
+          RowBox[{"Integrate", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"x1", "-", "x2"}], ")"}], "^", "2"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"h", "-", "y1", "+", "y2"}], ")"}], "^", "2"}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"y2", ",", "0", ",", 
+              RowBox[{"y1", "-", 
+               RowBox[{"h", "/", "2"}]}]}], "}"}]}], "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"y1", ",", 
+           RowBox[{"h", "/", "2"}], ",", "h"}], "}"}]}], "]"}]}], " ", 
+      "\[IndentingNewLine]", ",", 
+      RowBox[{"{", 
+       RowBox[{"x2", ",", "0", ",", "l"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x1", ",", "0", ",", "l"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6829422929889994`*^9, 3.682942336096198*^9}, {
+  3.6829432473498893`*^9, 3.6829432585495353`*^9}, {3.6829432970713663`*^9, 
+  3.682943430761572*^9}, {3.6829434713323174`*^9, 3.682943570852778*^9}, {
+  3.7257911178985806`*^9, 3.7257911253865805`*^9}, {3.72579119070378*^9, 
+  3.72579120212298*^9}}],
+
+Cell[BoxData["228937.67187500006`"], "Output",
+ CellChangeTimes->{{3.682942336727498*^9, 3.68294234449687*^9}, 
+   3.682943571645342*^9, 3.7257907850995803`*^9, 3.7257909458837805`*^9, 
+   3.7257912028873806`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"228938", "/", "281573."}]], "Input",
+ CellChangeTimes->{{3.6829435845826263`*^9, 3.6829435973786497`*^9}}],
+
+Cell[BoxData["0.8130680143337607`"], "Output",
+ CellChangeTimes->{{3.6829435949659567`*^9, 3.682943597788683*^9}, {
+  3.7257907862695804`*^9, 3.7257907883755803`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6829423368025045`*^9, 3.6829423389914293`*^9}}]
+},
+WindowSize->{1254, 594},
+WindowMargins->{{Automatic, -1281}, {113, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5710, 126, 259, "Input"],
+Cell[6293, 150, 218, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6548, 158, 3399, 89, 107, "Input"],
+Cell[9950, 249, 213, 3, 63, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10200, 257, 130, 2, 30, "Input"],
+Cell[10333, 261, 167, 2, 30, "Output"]
+}, Open  ]],
+Cell[10515, 266, 96, 1, 30, "Input"]
+}
+]
+*)
+

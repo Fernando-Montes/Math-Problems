@@ -1,0 +1,164 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5060,        156]
+NotebookOptionsPosition[      4700,        139]
+NotebookOutlinePosition[      5050,        154]
+CellTagsIndexPosition[      5007,        151]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"www", ".", "expii", ".", "com"}], "/", "solve"}], "/", "34"}],
+      "/", "4"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "There", " ", "are", " ", "142", " ", "different", " ", "Pok\[EAcute]mon",
+      " ", "able", " ", "to", " ", "be", " ", "found", " ", "in", " ", "the", 
+     " ", "wild", " ", "in", " ", "the", " ", "United", " ", 
+     RowBox[{"States", ".", " ", "What"}], " ", "if", " ", "whenever", " ", 
+     "you", " ", "encountered", " ", "a", " ", "Pok\[EAcute]mon"}], ",", " ", 
+    RowBox[{
+    "it", " ", "was", " ", "a", " ", "uniformly", " ", "random", " ", "one", 
+     " ", "from", " ", "the", " ", "142", " ", 
+     RowBox[{"possibilities", "?", " ", "Determine"}], " ", "the", " ", 
+     "number", " ", "n", " ", "so", " ", "that", " ", "after", " ", "seeing", 
+     " ", "n", " ", "Pok\[EAcute]mon"}], ",", " ", 
+    RowBox[{
+    "you", " ", "have", " ", "at", " ", "least", " ", "a", " ", "50", "%", 
+     " ", "chance", " ", "that", " ", "you", " ", "have", " ", "seen", " ", 
+     "all", " ", "142", " ", "different", " ", 
+     RowBox[{"ones", "?"}]}]}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7259012353016977`*^9, 3.725901290673098*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Probability", " ", "of", " ", "having", " ", "them", " ", "all"}], " ", 
+    "=", " ", 
+    RowBox[{"1", " ", "-", " ", 
+     RowBox[{
+     "Probability", " ", "at", " ", "least", " ", "1", " ", "missing"}]}]}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Probability", " ", "of", " ", "at", " ", "least", " ", "1", " ", 
+     "missing"}], " ", "=", " ", 
+    RowBox[{"P", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+         "1", " ", "missing", " ", "OR", " ", "2", " ", "missing", " ", 
+          "OR"}], " ", "..."}], ".", " ", "142"}], " ", "missing"}], 
+      ")"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Using", " ", "the", " ", "inclusion"}], "-", 
+     RowBox[{"exclusion", " ", 
+      RowBox[{"principle", ":", "\[IndentingNewLine]", 
+       RowBox[{"P", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+            "1", " ", "missing", " ", "OR", " ", "2", " ", "missing", " ", 
+             "OR"}], " ", "..."}], ".", " ", "142"}], " ", "missing"}], 
+         ")"}]}]}]}]}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"P", 
+         RowBox[{"(", 
+          RowBox[{"1", " ", "missing"}], ")"}]}], "-", 
+        RowBox[{"P", 
+         RowBox[{"(", 
+          RowBox[{"2", " ", "missing"}], ")"}]}], "+", 
+        RowBox[{"P", 
+         RowBox[{"(", 
+          RowBox[{"3", " ", "missing"}], ")"}]}]}], " ", "..."}], ".", " ", 
+      "P"}], 
+     RowBox[{"(", 
+      RowBox[{"142", " ", "missing"}], ")"}]}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"N", "[", 
+   RowBox[{"1", "-", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"-", "1"}], ")"}], "^", 
+        RowBox[{"(", 
+         RowBox[{"m", "+", "1"}], ")"}]}], "*", 
+       RowBox[{"Binomial", "[", 
+        RowBox[{"142", ",", "m"}], "]"}], "*", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"142", "-", "m"}], ")"}], "/", "142"}], ")"}], "^", 
+        "756"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"m", ",", "1", ",", "142"}], "}"}]}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.725901375176498*^9, 3.7259013751920977`*^9}, {
+  3.725901724306898*^9, 3.725901823039298*^9}, {3.725902680637298*^9, 
+  3.725902727125298*^9}, {3.725902776624098*^9, 3.725902863188498*^9}}],
+
+Cell[BoxData["0.5017894017738921`"], "Output",
+ CellChangeTimes->{3.725901378187298*^9, 3.725902864186898*^9}]
+}, Open  ]]
+},
+WindowSize->{860, 750},
+WindowMargins->{{Automatic, -1334}, {77, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1375, 29, 126, "Input"],
+Cell[CellGroupData[{
+Cell[1958, 53, 2613, 80, 126, "Input"],
+Cell[4574, 135, 110, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+

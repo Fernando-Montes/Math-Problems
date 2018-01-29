@@ -1,0 +1,169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5279,        161]
+NotebookOptionsPosition[      4598,        132]
+NotebookOutlinePosition[      4948,        147]
+CellTagsIndexPosition[      4905,        144]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"www", ".", "expii", ".", "com"}], "/", "solve"}], "/", "8"}], 
+     "/", "3"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{" ", 
+      RowBox[{
+       RowBox[{
+       "Your", " ", "campaign", " ", "website", " ", "is", " ", "raising", 
+        " ", "donations", " ", "with", " ", 
+        RowBox[{"a", " ", "'"}], "Donate", " ", 
+        RowBox[{"\:ff0499", "'"}], " ", 
+        RowBox[{"button", ".", " ", "Today"}]}], ",", " ", 
+       RowBox[{
+       "your", " ", "campaign", " ", "manager", " ", "gave", " ", "you", " ", 
+        "a", " ", "handwritten", " ", "note", " ", "saying", " ", "that", " ",
+         "you", " ", "have", " ", "raised", " ", "\:ff0414x"}], ",", 
+       RowBox[{"85", "x", " ", "through", " ", "those", " ", 
+        RowBox[{"donations", ".", "The"}], " ", "trouble", " ", "is"}], ",", 
+       " ", 
+       RowBox[{"you", " ", "can"}]}], "\[CloseCurlyQuote]"}], "t", " ", 
+     "read", " ", "two", " ", "of", " ", "the", " ", "digits", " ", 
+     RowBox[{"(", 
+      RowBox[{"indicated", " ", "by", " ", "x"}], ")"}]}], ",", " ", 
+    RowBox[{"because", " ", "they", " ", "are", " ", 
+     RowBox[{"smudged", ".", " ", "How"}], " ", "many", " ", "dollars", " ", 
+     "did", " ", "you", " ", 
+     RowBox[{"raise", "?"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"99", "*", "1010"}], " ", "+", " ", "10"}]}]], "Input",
+ CellChangeTimes->{{3.6883196584515133`*^9, 3.6883196784243608`*^9}, {
+  3.68831973366753*^9, 3.6883197581007347`*^9}, {3.688375867716358*^9, 
+  3.6883758700102916`*^9}, {3.72578724381478*^9, 3.72578732678098*^9}}],
+
+Cell[BoxData["100000"], "Output",
+ CellChangeTimes->{{3.688319662838114*^9, 3.688319678850645*^9}, {
+   3.6883197343500843`*^9, 3.6883197584682636`*^9}, 3.688375870607839*^9, 
+   3.7257873278573804`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"99", "*", "101"}], " ", "+", " ", "1"}]], "Input",
+ CellChangeTimes->{{3.6883204431595354`*^9, 3.68832044959505*^9}, 
+   3.688320624774063*^9, {3.6883758811249304`*^9, 3.688375886570366*^9}, {
+   3.7257873330053806`*^9, 3.72578733376978*^9}}],
+
+Cell[BoxData["10000"], "Output",
+ CellChangeTimes->{{3.6883204470035925`*^9, 3.688320450045086*^9}, 
+   3.688320625570377*^9, 3.688375887201667*^9, 3.7257873343937807`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"99", "*", "10"}], " ", "+", " ", "10"}]], "Input",
+ CellChangeTimes->{{3.688320526071168*^9, 3.688320527575038*^9}, {
+  3.688375896157383*^9, 3.6883758976362514`*^9}, {3.7257873401501803`*^9, 
+  3.72578734082098*^9}}],
+
+Cell[BoxData["990"], "Output",
+ CellChangeTimes->{3.6883205283313484`*^9, 3.6883758993913918`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+     "Therefore", " ", "14", "x85x", " ", "is", " ", "divisable", " ", "by", 
+      " ", "99", " ", "if", " ", "10"}], " ", "+", " ", "4", " ", "+", " ", 
+     RowBox[{"10", " ", "x1"}], " ", "+", " ", "8", " ", "+", " ", "50", " ", 
+     "+", " ", "x2"}], " ", "=", " ", "99"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"x2", " ", "+", " ", 
+     RowBox[{"10", " ", "x1"}]}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{"27", " ", "which", " ", "has", " ", "solutions", " ", "x1"}], 
+     " ", "=", " ", 
+     RowBox[{
+      RowBox[{"2", " ", "and", " ", "x2"}], " ", "=", " ", "7"}]}]}], " ", 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.72578734465958*^9, 3.7257874108503804`*^9}, {
+  3.7257874434461803`*^9, 3.72578747093338*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"142857", "/", "99"}]], "Input",
+ CellChangeTimes->{{3.6883760348947315`*^9, 3.6883760424865885`*^9}}],
+
+Cell[BoxData["1443"], "Output",
+ CellChangeTimes->{3.6883760431216393`*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 873},
+WindowMargins->{{Automatic, -1327}, {74, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1811, 41, 145, "Input"],
+Cell[2394, 65, 203, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2634, 73, 277, 5, 30, "Input"],
+Cell[2914, 80, 172, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3123, 87, 252, 5, 30, "Input"],
+Cell[3378, 94, 98, 1, 30, "Output"]
+}, Open  ]],
+Cell[3491, 98, 863, 22, 50, "Input"],
+Cell[CellGroupData[{
+Cell[4379, 124, 125, 2, 30, "Input"],
+Cell[4507, 128, 75, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+

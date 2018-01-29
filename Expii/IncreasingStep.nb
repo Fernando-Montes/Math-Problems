@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4950,        132]
+NotebookOptionsPosition[      4630,        116]
+NotebookOutlinePosition[      4980,        131]
+CellTagsIndexPosition[      4937,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"www", ".", "expii", ".", "com"}], "/", "solve"}], "/", "2"}], 
+     "/", "5"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{" ", 
+     RowBox[{
+      RowBox[{"Randomly", " ", 
+       RowBox[{"(", 
+        RowBox[{"but", " ", "uniformly"}], ")"}], " ", "sample", " ", "a", 
+       " ", "number", " ", "between", " ", "0", " ", "and", " ", "1.", " ", 
+       "Stop", " ", "the", " ", "first", " ", "time", " ", "that", " ", "a", 
+       " ", "sample", " ", "is", " ", "greater", " ", "than", " ", "the", " ",
+        "immediately", " ", "previous", " ", 
+       RowBox[{"sample", ".", " ", "That"}], " ", "is"}], ",", " ", 
+      RowBox[{
+      "if", " ", "your", " ", "samples", " ", "are", " ", "labeled", " ", 
+       "x_", "1", "\:200b"}], ",", " ", 
+      RowBox[{"x_", "2", "\:200b"}], ",", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"etc", ".", " ", "stop"}], " ", "when", " ", "x_", 
+        RowBox[{"{", 
+         RowBox[{"i", "+", "1"}], "}"}]}], ">", 
+       RowBox[{
+        RowBox[{"x_i\:200b", ".", " ", "What"}], " ", "is", " ", "the", " ", 
+        "expected", " ", "number", " ", "of", " ", "samples", " ", 
+        "you"}]}]}], "\[CloseCurlyQuote]"}], "ll", " ", "take", " ", "until", 
+    " ", "this", " ", 
+    RowBox[{"happens", "?"}]}], " ", "*)"}], " ", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Assuming", " ", "i", " ", "steps"}], ",", " ", 
+    RowBox[{"there", " ", "are", " ", 
+     RowBox[{"i", "!"}], " ", "positions", " ", "where", " ", "x_i", " ", 
+     "could", " ", "go", " ", "randomly", " ", "be", " ", "placed", " ", "in",
+      " ", "the", " ", "sequence", " ", "x_", "1"}], ",", "  ", 
+    RowBox[{"x_", "2"}], ",", " ", 
+    RowBox[{
+     RowBox[{"...", ".", " ", "x_"}], 
+     RowBox[{"{", 
+      RowBox[{"i", "-", "1"}], "}"}]}], ",", " ", 
+    RowBox[{
+     RowBox[{"x_i", ".", " ", "The"}], " ", "number", " ", "of", " ", 
+     "possibilities", " ", "such", " ", "that", " ", "there", " ", "are", " ",
+      "i", " ", "steps", " ", "is", " ", 
+     RowBox[{"(", 
+      RowBox[{"i", "-", "1"}], ")"}], " ", "since", " ", "the", " ", "first", 
+     " ", 
+     RowBox[{"(", 
+      RowBox[{"i", "-", "1"}], ")"}], " ", "are", " ", "fixed", " ", 
+     RowBox[{"(", 
+      RowBox[{"only", " ", "1", " ", "possibility"}], ")"}], " ", "BUT", " ", 
+     "x_i", " ", "can", " ", "be", " ", "placed", " ", "in", " ", "between", 
+     " ", "any", " ", "of", " ", "those", " ", 
+     RowBox[{"(", 
+      RowBox[{"i", "-", "1"}], ")"}], " ", 
+     RowBox[{"places", "!"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Integrating", " ", "over", " ", "the", " ", "probabilities", " ", "of", 
+    " ", "having", " ", "i", " ", 
+    RowBox[{"steps", ":"}]}], " ", "*)"}], " ", "\[IndentingNewLine]", 
+  RowBox[{"Sum", "[", 
+   RowBox[{
+    RowBox[{"i", "*", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"i", "-", "1."}], ")"}], "/", 
+      RowBox[{"i", "!"}]}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "2", ",", "1000"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.683623234758791*^9, 3.683623296316786*^9}, {
+  3.6836233469547105`*^9, 3.683623354052756*^9}, {3.6836234042538776`*^9, 
+  3.683623417888365*^9}, {3.725702126846571*^9, 3.725702131956459*^9}, {
+  3.725704167187978*^9, 3.725704361899228*^9}, {3.7257044157054777`*^9, 
+  3.7257044504179783`*^9}, {3.7257052943851585`*^9, 3.725705398443988*^9}, {
+  3.7257054302202377`*^9, 3.725705585736488*^9}}],
+
+Cell[BoxData["2.7182818284590455`"], "Output",
+ CellChangeTimes->{{3.6836232851939144`*^9, 3.683623296800389*^9}, {
+   3.6836233480779176`*^9, 3.683623354317958*^9}, {3.683623404955882*^9, 
+   3.683623418793171*^9}, {3.725704430584228*^9, 3.7257044509179783`*^9}, {
+   3.7257053016577377`*^9, 3.7257053072952375`*^9}, 3.7257055876577377`*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 813},
+WindowMargins->{{Automatic, -1052}, {24, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3689, 85, 278, "Input"],
+Cell[4272, 109, 342, 4, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+

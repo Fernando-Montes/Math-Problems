@@ -1,0 +1,129 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4125,        121]
+NotebookOptionsPosition[      3696,        102]
+NotebookOutlinePosition[      4044,        117]
+CellTagsIndexPosition[      4001,        114]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"https", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"www", ".", "expii", ".", "com"}], "/", "solve"}], "/", "24"}],
+      "/", "4"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", "  ", 
+   RowBox[{
+    RowBox[{"Facebook", " ", "has", " ", "been", " ", 
+     RowBox[{"hacked", "!"}], " ", "All", " ", "friendships", " ", "have", 
+     " ", "been", " ", 
+     RowBox[{"erased", ".", " ", "Instead"}]}], ",", 
+    RowBox[{
+    "each", " ", "person", " ", "has", " ", "sent", " ", "exactly", " ", "1", 
+     " ", "friend", " ", "request", " ", "to", " ", "a", " ", "random", " ", 
+     "person", " ", "in", " ", "the", " ", "network"}], ",", " ", 
+    RowBox[{
+    "and", " ", "that", " ", "friend", " ", "request", " ", "has", " ", 
+     "been", " ", 
+     RowBox[{"accepted", ".", " ", "What"}], " ", "is", " ", "the", " ", 
+     "probability", " ", "that", " ", "there", " ", "is", " ", "a", " ", 
+     "triangle", " ", "of", " ", "friends", " ", "in", " ", "the", " ", "new",
+      " ", "network"}], ",", 
+    RowBox[{"rounded", " ", "to", " ", "the", " ", "nearest", " ", 
+     RowBox[{"percent", "?"}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"3", " ", 
+     RowBox[{"friends", ":", " ", 
+      RowBox[{
+       RowBox[{"2", "^", "3"}], " ", "possibilities"}]}]}], ",", " ", 
+    RowBox[{"2", " ", "directions"}]}], " ", "*)"}], " ", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"2", "/", 
+    RowBox[{"2", "^", "3."}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"4", " ", 
+      RowBox[{"friends", ":", " ", 
+       RowBox[{
+        RowBox[{"3", "^", "4"}], " ", "possibilities"}]}]}], ",", " ", 
+     RowBox[{
+     "2", " ", "directions", " ", "*", " ", "4", " ", "pairs", "*", " ", "3", 
+      " ", "random", " ", "connections"}]}], " ", "*)"}], " ", 
+   RowBox[{"2", "*", "4", "*", 
+    RowBox[{"3", "/", 
+     RowBox[{"3", "^", "4."}]}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"5", " ", 
+     RowBox[{"friends", ":"}]}], " ", "*)"}], 
+   RowBox[{"10", "/", "32."}]}]}]], "Input",
+ CellChangeTimes->{{3.6834791310647974`*^9, 3.683479141189262*^9}, {
+  3.6834807271177564`*^9, 3.6834807274765453`*^9}, {3.7258825394763007`*^9, 
+  3.725882544188501*^9}, {3.7258826164995008`*^9, 3.725882672863301*^9}, {
+  3.7258827746065006`*^9, 3.725882856428501*^9}}],
+
+Cell[BoxData["0.25`"], "Output",
+ CellChangeTimes->{
+  3.6834791417664657`*^9, 3.68348072824092*^9, 3.725882638933301*^9, {
+   3.725882834011301*^9, 3.725882856865301*^9}}],
+
+Cell[BoxData["0.2962962962962963`"], "Output",
+ CellChangeTimes->{
+  3.6834791417664657`*^9, 3.68348072824092*^9, 3.725882638933301*^9, {
+   3.725882834011301*^9, 3.725882856865301*^9}}],
+
+Cell[BoxData["0.3125`"], "Output",
+ CellChangeTimes->{
+  3.6834791417664657`*^9, 3.68348072824092*^9, 3.725882638933301*^9, {
+   3.725882834011301*^9, 3.725882856865301*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.725882639245301*^9, 3.725882640243701*^9}}]
+},
+WindowSize->{767, 853},
+WindowMargins->{{Automatic, -922}, {6, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2464, 59, 221, "Input"],
+Cell[3047, 83, 172, 3, 30, "Output"],
+Cell[3222, 88, 186, 3, 30, "Output"],
+Cell[3411, 93, 174, 3, 63, "Output"]
+}, Open  ]],
+Cell[3600, 99, 92, 1, 30, "Input"]
+}
+]
+*)
+
